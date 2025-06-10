@@ -1,0 +1,19 @@
+body {
+    background-color: #666666;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #000444;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
