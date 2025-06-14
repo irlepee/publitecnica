@@ -26,7 +26,8 @@ body {
 }
 
 .navbar.solid {
-    background-color: #000333;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
 }
 
 .navbar a {
@@ -60,7 +61,14 @@ body {
 }
 
 
-/* PARALLAX */
+
+
+
+
+
+
+/* MAIN */
+/* SECTION 1 */
 
 .parallax {
     color: white;
@@ -88,7 +96,7 @@ body {
     width: 50%;
 }
 
-/* MAIN */
+/* SEPARATOR*/
 
 .separator {
     color: white;
@@ -109,32 +117,67 @@ body {
     height: 100%;
 }
 
+/* SECTION 2 */
+
+.parallax2 {
+    background-image: url('../img/fondo2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 2em 0;
+}
 
 .container1 {
     display: flex;
-    background-color: #ffffff;
-    justify-content: space-between;
-    padding: 1em;
-    height: 20em;
+    justify-content: space-between;;
+    padding: 2em 2em 0 2em;
     gap: 2em;
 }
 
-#item1 {
-    background-color: #f4f3f2;
-    border-radius: 15px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 25%);
-}
-
-#item2 {
+.item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 18pt;
+    background-color: #00000080;
+    border-radius: 20px;
+    width: auto;
+    height: fit-content;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 25%);
+    padding: .5em;
+}
+
+.item p {
+    padding: 0px;
+    margin: 0 0 1em 0;
+}
+
+.container2  {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#uad {
+    border-radius: 10px;
+    height: 40vh;
     width: 100%;
 }
 
-#item2 p {
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 1em;
+#nordico {
+    border-radius: 10px;
+    height: 40vh;
+    width: 100%;
+}
+
+#rosalesplaza {
+    border-radius: 10px;
+    height: 80vh;
+}
+
+#mori {
+    border-radius: 10px;
+    height: 80vh;
 }
 
 /* FOOTER */
@@ -146,5 +189,4 @@ footer {
     padding: 20px 0;
     position: relative;
     width: 100%;
-    margin-top: 2em;
 }
