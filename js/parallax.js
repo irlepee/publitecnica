@@ -13,4 +13,15 @@ window.addEventListener('scroll', function() {
             parallax2.style.backgroundPosition = 'center 0px';
         }
     }
+
+    const parallax3 = document.querySelector('.parallax3');
+    if (parallax3) {
+        const sectionTop = parallax3.offsetTop;
+        let relativeScroll = window.scrollY - sectionTop;
+        if (relativeScroll > 0) {
+            parallax3.style.backgroundPosition = `center ${relativeScroll * 0.5}px`;
+        } else {
+            parallax3.style.backgroundPosition = 'center 0px';
+        }
+    }
 });
