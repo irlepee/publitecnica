@@ -17,6 +17,7 @@ body {
 
 .navbar {
     font-size: 1.5em;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +32,7 @@ body {
 }
 
 .navbar a {
-    color: #000000;
+    color: white;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -52,6 +53,7 @@ body {
 
 
 #logo {
+    display: none;
     width: 4em;
 }
 
@@ -60,11 +62,19 @@ body {
     width: 1.2em;
 }
 
+h1 {
+    font-size: 20pt;
+    font-weight: 600;
+    margin: 0;
+}
 
+.navbar.solid #logo {
+    display: flex;
+}
 
-
-
-
+.navbar.solid h1 {
+    display: none;
+}
 
 
 /* MAIN */
@@ -264,3 +274,41 @@ footer {
     position: relative;
     width: 100%;
 }
+
+
+
+
+
+/* ---PLANTILLA--- */
+
+.headerplantilla {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    background-image: url('../img/fondo4.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    border-bottom: 5px solid #a78513
+}
+
+.headerplantilla:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.headerplantilla * {
+    position: relative;
+    z-index: 2;
+}
+
+.headerplantilla h1 {
+    color: white;
+    font-size: 48pt;
+}
+
