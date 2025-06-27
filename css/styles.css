@@ -42,7 +42,6 @@ body {
 
 .navbar a:hover {
     color: #00B3B3;
-    font-weight: 600;
 }
 
 .navbar ul {
@@ -397,9 +396,21 @@ footer {
 }
 
 
+
 /* CONTACTO */
 
 .itemcontacto {
     width: 30vw;
 }
 
+#itemcontacto1 {
+    background-color: #00B3B3;
+}
+
+#itemcontacto2 {
+    background-color: #c50a45;
+}
+
+#itemcontacto3 {
+    background-color: #a78513;
+}
