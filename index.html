@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUBLI-TÉCNICA</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -70,7 +72,7 @@
                 <button>COTIZAR</button>
             </div>
             <div class="item">
-                <img src="img/diez.png" alt=""> 
+                <img src="img/diez.png" alt="">
                 <h3>LUCES NEON</h3>
                 <p>Letras y logotipos con profundidad e iluminación en diferentes disposiciones para darle vida a tu
                     negocio</p>
@@ -113,7 +115,8 @@
         </div>
 
         <div class="parallax4">
-            <div class="placeholder1">AQUÍ VA EL MAPA</div>
+            <div id="map"></div>
+            <a id="btnmap" href="https://maps.app.goo.gl/P3iGBmQuzeCwbCz59">OBTENER DIRECCIONES</a>
         </div>
     </main>
 
@@ -123,7 +126,8 @@
         </div>
     </footer>
 
-    <script src="js/parallax.js"></script>
+    <script src="/js/parallax.js"></script>
+    <script src="/js/map.js"></script>
 
 </body>
 

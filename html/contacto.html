@@ -1,1 +1,38 @@
- contacto
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+    <header id="navbar-container"></header>
+    <script src="../js/navbar.js"></script>
+
+    <div class="headerplantilla">
+        <h1>CONTACTO</h1>
+    </div>
+
+    <main class="mainplantilla">
+
+        <div style="display: flex; margin-bottom: 1em; gap: 1em;">
+            <div class="item itemcontacto">INFORMACIÓN DE CONTACTO TIPO NOMBRE</div>
+            <div class="item itemcontacto">INFORMACIÓN DE CONTACTO TIPO CELULAR</div>
+            <div class="item itemcontacto">INFORMACIÓN DE CONTACTO TIPO DIRECCIONES</div>
+        </div>
+
+        <div id="map"></div>
+        <a id="btnmap" href="https://maps.app.goo.gl/P3iGBmQuzeCwbCz59">OBTENER DIRECCIONES</a>
+    </main>
+
+    <script src="/js/map.js"></script>
+
+</body>
+
+</html>

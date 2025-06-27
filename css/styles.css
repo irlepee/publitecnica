@@ -37,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    transition: color 0.4s, font-weight 0.3s;
+    transition: color 0.3s, font-weight 0.3s;
 }
 
 .navbar a:hover {
@@ -108,7 +108,7 @@ h1 {
     visibility: hidden;
     position: absolute;
     opacity: 0;
-    left: -25%;
+    right: -40%;
     top: 100%;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 15px;
@@ -124,12 +124,11 @@ h1 {
 .submenu a {
     justify-content: center;
     font-weight: 400;
-    transition: font-weight 0.3s;
 }
 
 .submenu a:hover {
     color: #00B3B3;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* MAIN */
@@ -365,5 +364,42 @@ footer {
 .headerplantilla h1 {
     color: white;
     font-size: 48pt;
+}
+
+.mainplantilla {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+}
+
+
+
+
+/* MAP */
+
+#map {
+    width: 80vw;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+#btnmap {
+    font-weight: 400;
+    font-size: 2em;
+    color: #c50a45;
+    transition: color 0.3s;
+}
+
+#btnmap:hover {
+    color: #000333;
+}
+
+
+/* CONTACTO */
+
+.itemcontacto {
+    width: 30vw;
 }
 
