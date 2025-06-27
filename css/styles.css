@@ -33,14 +33,16 @@ body {
 
 .navbar a {
     color: white;
+    font-weight: 400;
     display: flex;
     align-items: center;
     text-decoration: none;
-    transition: color 0.4s;
+    transition: color 0.4s, font-weight 0.3s;
 }
 
-.navbar.solid a {
-    color: #ffffff;
+.navbar a:hover {
+    color: #00B3B3;
+    font-weight: 600;
 }
 
 .navbar ul {
@@ -55,6 +57,11 @@ body {
 #logo {
     display: none;
     width: 4em;
+    transition: transform 0.3s;
+}
+
+#logo:hover {
+    transform: scale(1.2);
 }
 
 #wa-logo {
@@ -76,6 +83,54 @@ h1 {
     display: none;
 }
 
+/* NAVBAR-SUBMENU */
+
+.submenu-dropdown {
+    color:white;
+    cursor: default;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.submenu-dropdown:hover {
+    color: #00B3B3;
+}
+
+.submenu-dropdown:hover .submenu{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.submenu {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    left: -25%;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    width: max-content;
+    backdrop-filter: blur(5px);
+
+}
+
+.submenu li {
+    margin: 0.4em;
+}
+
+.submenu a {
+    justify-content: center;
+    font-weight: 400;
+    transition: font-weight 0.3s;
+}
+
+.submenu a:hover {
+    color: #00B3B3;
+    font-weight: 600;
+}
 
 /* MAIN */
 /* SECTION 1 */
