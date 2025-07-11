@@ -478,9 +478,6 @@ span {
 }
 
 @media (max-width: 700px) {
-    .navbar {
-        display: block;
-    }
 
     #rosalesplazaitem {
         grid-column: 1/7;
@@ -500,5 +497,13 @@ span {
 
     #btnmap {
         font-size: 1.2em;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+    .navbar {
+        display: block;
     }
 }
