@@ -211,7 +211,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     font-size: 18pt;
-    background-color: #000000;
+    background-color: #00000080;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 25%);
     padding: .25em;
@@ -514,7 +514,7 @@ span {
     }
 
     .parallax {
-        height: 80vh;
+        height: 85vh;
     }
 
     .parallax img {
