@@ -605,21 +605,25 @@ span {
     }
 
     .parallax3 .item {
-        height: 40vh;
+        height: auto;
         width: 40vw;
         padding: 0;
         gap: 0;
         margin: 0;
     }
 
+    .parallax3 img {
+        height: 100%;
+    }
+
     .parallax3 .item h3 {
-        font-size: 12pt;
+        font-size: 14pt;
         margin: 0;
         padding-top: 1em;
     }
 
     .parallax3 .item p {
-        font-size: 10pt;
+        font-size: 12pt;
         margin: 0;
         padding: 1em 0.5em;
     }
