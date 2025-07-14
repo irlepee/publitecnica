@@ -514,7 +514,7 @@ span {
     }
 
     .parallax {
-        height: 85vh;
+        height: 80vh;
     }
 
     .parallax img {
@@ -529,7 +529,7 @@ span {
     .separator {
         font-size: 1.6em;
         font-weight: 500;
-        height: 15vh;
+        height: 10vh;
     }
 
     .separator h3 {
