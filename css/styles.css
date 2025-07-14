@@ -598,6 +598,33 @@ span {
         border-radius: 20px;
     }
 
+    .parallax3 {
+        margin: 0;
+        padding: 1em 0;
+        gap: 1em;
+    }
 
+    .parallax3 .item {
+        height: 40vh;
+        width: 40vw;
+        padding: 0;
+        gap: 0;
+        margin: 0;
+    }
 
+    .parallax3 .item h3 {
+        font-size: 12pt;
+        margin: 0;
+        padding-top: 1em;
+    }
+
+    .parallax3 .item p {
+        font-size: 10pt;
+        margin: 0;
+        padding: 1em 0.5em;
+    }
+
+    .parallax3 button {
+        font-size: 10pt;
+    }
 }
