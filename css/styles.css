@@ -3,10 +3,6 @@
     src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
-html {
-    font-size: 16px; /* Base font size */
-}
-
 body {
     background-color: #333333;
     font-family: 'Montserrat';
@@ -583,6 +579,7 @@ span {
 
     #descriptionitem p {
         font-size:0.9em;
+        -moz-font-size: 1em;
         margin: 0.5em 1em;
     }
 
