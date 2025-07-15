@@ -517,13 +517,48 @@ span {
 
 /* MOBILE */
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 7vh;
+        gap: 0.3em;
     }
+
+    #menulogosvg {
+        height: 1.5em ;
+    }
+
+    #navbarbutton {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 0.8em;
+    }
+
+    .nav-list .open {
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     #logo {
         height: 5vh;
@@ -579,7 +614,6 @@ span {
 
     #descriptionitem p {
         font-size:0.9em;
-        -moz-font-size: 1em;
         margin: 0.5em 1em;
     }
 
