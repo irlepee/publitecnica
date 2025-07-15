@@ -631,4 +631,16 @@ span {
     .parallax3 button {
         font-size: 10pt;
     }
+
+    .parallax4 {
+        padding: 1em;
+        align-items: start;
+    }
+
+    #map {
+        height: 60vh;
+        width: 70vw;
+        border: 6px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    }
 }
