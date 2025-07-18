@@ -14,14 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      const navlist = document.querySelector('nav-list');
+      const navlist = document.querySelector('#nav-list');
       const navbarButton = document.getElementById("navbarbutton");
       if (navbarButton && navlist) {
         navbarButton.addEventListener("click", () => {
-          nav-list.classList.toggle("open");
+          navlist.classList.toggle("open");
         });
       }
     });
-
-
 });
