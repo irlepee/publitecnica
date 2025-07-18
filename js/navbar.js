@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const servicioslist = document.querySelector('.submenu')
-      const serviciosbtn = document.getElementById('serviciosbtn');
+      const serviciosbtn = document.getElementById("serviciosbtn");
       if (serviciosbtn && servicioslist) {
-        navbarButton.addEventListener("click", () => {
-          servicioslist.classList.toggle("open1");
+        serviciosbtn.addEventListener("click", () => {
+          servicioslist.classList.toggle("open");
         });
       }
     });
