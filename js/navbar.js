@@ -21,5 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
           navlist.classList.toggle("open");
         });
       }
+
+      const servicioslist = document.querySelector('.submenu')
+      const serviciosbtn = document.getElementById('serviciosbtn');
+      if (serviciosbtn && servicioslist) {
+        navbarButton.addEventListener("click", () => {
+          servicioslist.classList.toggle("open1");
+        });
+      }
     });
 });
