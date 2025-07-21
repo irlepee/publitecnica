@@ -15,16 +15,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // NAVBAR BUTTON SUBMENU
-      const btnsubmenu = document.querySelector('#serviciosbtn');
-      const submenu = document.querySelector('#submenu');
+      // NAVBAR BUTTON NAV-LIST
+      const btnnavlist = document.querySelector('#menunavbarmobile');
+      const navlist = document.querySelector('#nav-list');
       window.addEventListener('click', () => {
-        if (btnsubmenu && submenu){
-          submenu.classList.toogle('open');
+        if (btnnavlist && navlist){
+          navlist.classList.toggle('open');
+          console.log("Abierto");
         }
       });
 
-      
+
 
     });
 });
