@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       document.getElementById("navbar-container").innerHTML = data;
       
+      // NAVBAR SCROLL FOLLOW-UP
       const navbar = document.querySelector('.navbar');
       window.addEventListener('scroll', () => {
         if (window.scrollY > 400) {
@@ -14,20 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      const navlist = document.querySelector('#nav-list');
-      const navbarButton = document.getElementById("navbarbutton");
-      if (navbarButton && navlist) {
-        navbarButton.addEventListener("click", () => {
-          navlist.classList.toggle("open");
-        });
-      }
-
-      const servicioslist = document.querySelector('.submenu')
-      const serviciosbtn = document.getElementById("serviciosbtn");
-      if (serviciosbtn && servicioslist) {
-        serviciosbtn.addEventListener("click", () => {
-          servicioslist.classList.toggle("open");
-        });
-      }
     });
 });
