@@ -15,5 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      // NAVBAR BUTTON SUBMENU
+      const btnsubmenu = document.querySelector('#serviciosbtn');
+      const submenu = document.querySelector('#submenu');
+      window.addEventListener('click', () => {
+        if (btnsubmenu && submenu){
+          submenu.classList.toogle('open');
+        }
+      });
+
+      
+
     });
 });
