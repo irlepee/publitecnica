@@ -18,14 +18,20 @@ document.addEventListener("DOMContentLoaded", () => {
       // NAVBAR BUTTON NAV-LIST
       const btnnavlist = document.querySelector('#menunavbarmobile');
       const navlist = document.querySelector('#nav-list');
-      window.addEventListener('click', () => {
+      btnnavlist.addEventListener('click', () => {
         if (btnnavlist && navlist){
           navlist.classList.toggle('open');
-          console.log("Abierto");
         }
       });
 
-
+      // NAVBAR BUTTON SUBMENU
+      const serviciosbtn = document.querySelector('#serviciosbtn');
+      const servicioscontainer = document.querySelector('.servicioscontainer');
+      serviciosbtn.addEventListener('click', () => {
+        if (serviciosbtn && submenu) {
+          servicioscontainer.classList.toggle('open');
+        }
+      })
 
     });
 });

@@ -91,7 +91,7 @@ h1 {
     display: none;
 }
 
-/* NAVBAR-SUBMENU */
+/* NAVBAR-SUBMENU  ----------------------------------------- */
 
 .servicioscontainer {
     display: flex;
@@ -630,6 +630,35 @@ span {
         justify-content: center;
     }
 
+    #submenu {
+        padding: 0 1em;
+        border-bottom: 1px solid #00B3B3
+    }
+
+    #submenu li a {
+        font-size: 0.8em;
+        justify-content: center;
+    }
+
+    .servicioscontainer:hover #submenu {
+        max-height: 0;
+    }
+
+    .servicioscontainer:focus-within #submenu {
+        max-height: 0;
+    }
+
+    .servicioscontainer.open #submenu{
+        max-height: fit-content;
+    }
+
+    .servicioscontainer.open #serviciosbtn {
+        color: #c50a45;
+    }
+
+    #serviciosbtn:hover {
+        color: white;
+    }
 
 
 
