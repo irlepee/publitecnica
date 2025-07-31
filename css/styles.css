@@ -163,13 +163,29 @@ li a {
 
 /* MAIN */
 /* SECTION 1 */
+.slider {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide {
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
 
 .parallax {
     color: white;
     display: flex;
     align-items: center;
     text-align: center;
-    background-image: url('../img/fondo1.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -188,6 +204,18 @@ li a {
 
 .parallax img {
     width: 50%;
+}
+
+#parallaxslider1 {
+    background-image: url('../img/fondo1.png');
+}
+
+#parallaxslider2 {
+    background-image: url('../img/fondo2.png');
+}
+
+#parallaxslider3 {
+    background-image: url('../img/fondo3.png');
 }
 
 /* SEPARATOR*/
