@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
     // Desactiva parallax en móviles
     if (window.innerWidth < 700) return;
 
-    const parallax = document.querySelector('.parallax');
+    const parallax = document.querySelector('.parallax.active');
     if (parallax) {
         let offset = window.scrollY * .5;
         parallax.style.backgroundPosition = `center ${offset}px`;
