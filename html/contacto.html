@@ -23,10 +23,16 @@
     <main class="mainplantilla">
 
         <div class="contactocontainer">
-            <div id="itemcontacto1" class="item itemcontacto"><span>TE CONTACTAS CON:</span><br><p>Alejandro del Rosario Rubio Ahumada <br><br> <span>NÚMEROS: </span><br><span>TEL: </span>6686887620<br><span>CEL: </span>6682453516</p></div>
-            <div id="itemcontacto2" class="item itemcontacto"><span>HORARIOS:</span><br> <p>Lunes a Viernes <br> 9:00 a.m. - 5:00 p.m. <br><br> Sábado <br> 9:00 a.m. - 2:00 p.m.</p></div>
+            <div id="itemcontacto1" class="item itemcontacto"><span>TE CONTACTAS CON:</span><br>
+                <p>Alejandro del Rosario Rubio Ahumada <br><br> <span>NÚMEROS: </span><br><span>TEL:
+                    </span>6686887620<br><span>CEL: </span>6682453516</p>
+            </div>
+            <div id="itemcontacto2" class="item itemcontacto"><span>HORARIOS:</span><br>
+                <p>Lunes a Viernes <br> 9:00 a.m. - 5:00 p.m. <br><br> Sábado <br> 9:00 a.m. - 2:00 p.m.</p>
+            </div>
             <div id="itemcontacto3" class="item itemcontacto">
-                <span>DIRECCIÓN:</span><br><p> Calle Cárdenas #55 Emiliano Zapata y Santos Degollado <br><br><br> Los Mochis, Sinaloa</p>
+                <span>DIRECCIÓN:</span><br>
+                <p> Calle Cárdenas #55 Emiliano Zapata y Santos Degollado <br><br><br> Los Mochis, Sinaloa</p>
             </div>
         </div>
 
@@ -41,38 +47,8 @@
         <a id="btnmap" href="https://maps.app.goo.gl/P3iGBmQuzeCwbCz59">OBTENER DIRECCIONES</a>
     </main>
 
-
-    
     <script src="/js/map.js"></script>
-    <script>
-document.getElementById('form-contacto').addEventListener('submit', async function(e) {
-    e.preventDefault();
-
-    const form = e.target;
-    const data = {
-        nombre: form.nombre.value,
-        email: form.email.value,
-        mensaje: form.mensaje.value
-    };
-
-    try {
-        const res = await fetch('/api/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        });
-        const result = await res.json();
-        if (res.ok) {
-            alert('¡Mensaje enviado correctamente!');
-            form.reset();
-        } else {
-            alert('Error: ' + (result.error || 'No se pudo enviar el mensaje'));
-        }
-    } catch (err) {
-        alert('Error de conexión. Intenta de nuevo.');
-    }
-});
-</script>
+    <script src="/api/contact.js"></script>
 
 </body>
 
