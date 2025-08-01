@@ -34,31 +34,3 @@ export default async function handler(req, res) {
         return res.status(500).json({ error: 'Error al enviar el correo' });
     }
 }
-
-document.getElementById('form-contacto').addEventListener('submit', async function (e) {
-    e.preventDefault();
-
-    const form = e.target;
-    const data = {
-        nombre: form.nombre.value,
-        email: form.email.value,
-        mensaje: form.mensaje.value
-    };
-
-    try {
-        const res = await fetch('/api/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        });
-        const result = await res.json();
-        if (res.ok) {
-            alert('¡Mensaje enviado correctamente!');
-            form.reset();
-        } else {
-            alert('Error: ' + (result.error || 'No se pudo enviar el mensaje'));
-        }
-    } catch (err) {
-        alert('Error de conexión. Intenta de nuevo.');
-    }
-});
