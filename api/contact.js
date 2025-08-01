@@ -30,6 +30,7 @@ export default async function handler(req, res) {
 
         return res.status(200).json({ message: 'Mensaje enviado correctamente' });
     } catch (error) {
-        return res.status(500).json({ error: 'Error al enviar el mensaje' });
+        console.error('Error al enviar correo:', error);  // 👈 esto te dirá exactamente qué falló
+        return res.status(500).json({ error: 'Error al enviar el correo' });
     }
 }
