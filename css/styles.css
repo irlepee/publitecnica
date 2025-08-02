@@ -340,18 +340,18 @@ li a {
     display: flex;
     flex-direction: column;
     width: 18em;
-    padding: 0;
+    padding: 0 0 1em 0;
     transition: transform 0.3s;
 }
 
 .parallax3 .item p {
-    font-size: 1em;
-    padding: 0 2em;
-    margin: 0 0 1em 0;
+    padding: 1em;
+    margin: 0;
 }
 
 .parallax3 .item h3 {
-    margin: 0.7em;
+    padding: 0.5em;
+    margin: 0;
 }
 
 
@@ -361,9 +361,9 @@ li a {
     background-color: rgba(255, 255, 255, 0.1);
     border: 0;
     border-radius: 20px;
-    width: 60%;
+    width: 7em;
     padding: 0.5em;
-    margin-bottom: 1em;
+    margin-top: auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 55%);
     transition: background-color 0.3s;
 }
