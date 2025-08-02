@@ -211,7 +211,9 @@ li a {
 }
 
 #parallaxslider2 {
-    background-image: url('../img/fondo2.png');
+    background-image: url('../img/try2.png');
+    background-position: center;
+    background-size: cover;
 }
 
 #parallaxslider3 {
@@ -345,7 +347,7 @@ li a {
 }
 
 .parallax3 .item p {
-    padding: 1em;
+    padding: 0 1em 1em 1em;
     margin: 0;
 }
 
