@@ -167,7 +167,6 @@ li a {
 .slider {
     overflow: hidden;
     height: 100vh;
-    width: 100vw;
 }
 
 .slide {
@@ -396,19 +395,7 @@ li a {
     background-image: url('../img/fondo3.png');
     background-size: cover;
     background-position: center;
-    padding: 3em;
-    gap: 3em;
-}
-
-/* FOOTER */
-
-footer {
-    background-color: #000333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
+    padding-top: 3em;
 }
 
 
@@ -453,83 +440,54 @@ footer {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: #f4f3f2;
-    padding: 1em;
+    background-color: #f0f0f0;
+    padding: 0 2em;
 }
-
-
-
-
-/* MAP */
-
-#map {
-    width: 80vw;
-    height: 75vh;
-    border-radius: 15px;
-    margin-bottom: 1em;
-    border:1px solid #c50a45;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-}
-
-#btnmap {
-    font-weight: 400;
-    font-size: 2em;
-    color: #c50a45;
-    transition: color 0.3s;
-}
-
-#btnmap:hover {
-    color: #000333;
-}
-
-
 
 /* CONTACTO */
 
 .contactocontainer {
     display: flex;
-    margin-bottom: 1em;
-    gap: 1.5vw;
+    width: 100%;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
 }
 
-.itemcontacto {
-    padding: 0em 0.5em;
-    padding-top: 1em;
-    width: 30vw;
-    height: auto;
+#contactoinformacioncontainer {
+    height: 30vh;
+}
+
+.itemcontacto{
+    font-size: 1.2em;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1em;
+}
+
+.itemcontacto span {
+    font-weight: 700;
+    color: #333333
 }
 
 #itemcontacto1 {
-    background-color: #00B3B3;
+    border-radius: 20px 0 0 20px;
+    border-top: 2px solid #00B3B3;
+    border-left: 2px solid #00B3B3;
+    border-bottom: 2px solid #00B3B3;
 }
 
 #itemcontacto2 {
-    background-color: #c50a45;
+    border-top: 2px solid #a78513;
+    border-bottom: 2px solid #a78513;
 }
+
 
 #itemcontacto3 {
-    background-color: #a78513;
-}
-
-span {
-    font-weight: 600;
-    font-size: 1.1em;
-}
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 100;
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-}
-
-.whatsapp-float img {
-    width: 4em;
+    border-radius: 0 20px 20px 0;
+    border-top: 2px solid #c50a45;
+    border-right: 2px solid #c50a45;
+    border-bottom: 2px solid #c50a45;
 }
 
 /* FORM */
@@ -542,11 +500,13 @@ span {
     border: 1px solid #bbbbbb;
     border-radius: 20px;
     background-color: #ffffff;
-    padding: 1em;
-    width: 90vw;
+    padding: 1em 1.5em;
+    width: 100%;
     gap: 1em;
-    margin-bottom: 1em;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+#form-h2 {
+    color: #333333;
 }
 
 #form-contacto input {
@@ -617,9 +577,57 @@ span {
 
 
 
+/* MAP */
 
+#map {
+    width: 80vw;
+    height: 75vh;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    border:1px solid #c50a45;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
 
+#btnmap {
+    font-weight: 400;
+    font-size: 2em;
+    color: #c50a45;
+    transition: color 0.3s;
+    padding-bottom: 0.5em;
+}
 
+#btnmap:hover {
+    color: #00B3B3;
+}
+
+/* WHATSAPP */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 4em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #000333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
 
 
 

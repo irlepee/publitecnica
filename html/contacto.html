@@ -22,39 +22,55 @@
 
     <main class="mainplantilla">
 
-        <div class="contactocontainer">
-            <div id="itemcontacto1" class="item itemcontacto"><span>TE CONTACTAS CON:</span><br>
-                <p>Alejandro del Rosario Rubio Ahumada <br><br> <span>NÚMEROS: </span><br><span>TEL:
-                    </span>6686887620<br><span>CEL: </span>6682453516</p>
+        <h2 id="form-h2">Información completa: </h2>
+        <div id="contactoinformacioncontainer" class="contactocontainer">
+            <div id="itemcontacto1" class="itemcontacto">
+                <span>TE CONTACTAS CON:</span><br>
+                <p>Alejandro del Rosario Rubio Ahumada</p>
+                <p>Celular: 6682455516 <br> Oficina: 6686887620</p>
+                <p>Correo: atencion@publitecnica.com</p>
             </div>
-            <div id="itemcontacto2" class="item itemcontacto"><span>HORARIOS:</span><br>
+            <div id="itemcontacto2" class="itemcontacto">
+                <span>HORARIOS:</span><br>
                 <p>Lunes a Viernes <br> 9:00 a.m. - 5:00 p.m. <br><br> Sábado <br> 9:00 a.m. - 2:00 p.m.</p>
             </div>
-            <div id="itemcontacto3" class="item itemcontacto">
+            <div id="itemcontacto3" class="itemcontacto">
                 <span>DIRECCIÓN:</span><br>
                 <p> Calle Cárdenas #55 Emiliano Zapata y Santos Degollado <br><br><br> Los Mochis, Sinaloa</p>
             </div>
         </div>
 
-        <form id="form-contacto">
-            <div class="form-contacto1">
-                <label for="nombre">Nombre</label>
-                <input id="form-nombre" type="text" name="nombre" placeholder="Nombre" required>
-            </div>
-            <div class="form-contacto2">
-                <label for="email">Email</label>
-                <input id="form-email" type="email" name="email" placeholder="Correo Electrónico" required>
-            </div>
-            <div class="form-contacto3">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="form-mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-            </div>
-            <button id="form-button" type="submit">Enviar</button>
-        </form>
+        <h2 id="form-h2">Contáctanos a través del siguiente formulario, te responderemos a tu correo: </h2>
+        <div class="contactocontainer">
+            <form id="form-contacto">
+                <div class="form-contacto1">
+                    <label for="nombre">Nombre</label>
+                    <input id="form-nombre" type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-contacto2">
+                    <label for="email">Correo electrónico</label>
+                    <input id="form-email" type="email" name="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="form-contacto3">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="form-mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                </div>
+                <button id="form-button" type="submit">Enviar</button>
+            </form>
+        </div>
 
+        <h2 id="form-h2">Ubícanos:</h2>
         <div id="map"></div>
-        <a id="btnmap" href="https://maps.app.goo.gl/P3iGBmQuzeCwbCz59">OBTENER DIRECCIONES</a>
+        <a id="btnmap" href="https://maps.app.goo.gl/P3iGBmQuzeCwbCz59">
+            <h3>Obtener direcciones</h3>
+        </a>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Publi-Técnica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="/js/map.js"></script>
 
