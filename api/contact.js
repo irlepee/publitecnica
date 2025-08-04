@@ -24,6 +24,7 @@ export default async function handler(req, res) {
         await transporter.sendMail({
             from: `"${nombre}" <${process.env.EMAIL_USER}>`, // remitente autorizado
             to: process.env.EMAIL_TO, // tu correo de destino
+            replyTo: email,
             subject: 'Mensaje del formulario',
             text: mensaje
         });

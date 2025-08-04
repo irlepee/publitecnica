@@ -37,10 +37,19 @@
         </div>
 
         <form id="form-contacto">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="email" name="email" placeholder="Correo Electrónico" required>
-            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+            <div class="form-contacto1">
+                <label for="nombre">Nombre</label>
+                <input id="form-nombre" type="text" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="form-contacto2">
+                <label for="email">Email</label>
+                <input id="form-email" type="email" name="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="form-contacto3">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="form-mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+            </div>
+            <button id="form-button" type="submit">Enviar</button>
         </form>
 
         <div id="map"></div>

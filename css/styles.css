@@ -335,9 +335,6 @@ li a {
     gap: 3em;
 }
 
-
-
-
 .parallax3 .item {
     display: flex;
     flex-direction: column;
@@ -382,6 +379,13 @@ li a {
 
 .parallax3 .item:hover {
     transform: scale(1.04);
+}
+
+.item-buttons {
+    display: flex;
+    margin-top: auto;
+    gap: 1em;
+    text-wrap: nowrap;
 }
 
 /* SECTION 4 */
@@ -449,6 +453,7 @@ footer {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    background-color: #f4f3f2;
     padding: 1em;
 }
 
@@ -462,6 +467,8 @@ footer {
     height: 75vh;
     border-radius: 15px;
     margin-bottom: 1em;
+    border:1px solid #c50a45;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
 #btnmap {
@@ -527,6 +534,83 @@ span {
 
 /* FORM */
 
+#form-contacto {
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    border: 1px solid #bbbbbb;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 1em;
+    width: 90vw;
+    gap: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+#form-contacto input {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+#form-contacto textarea {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    resize: none;
+}
+
+#form-mensaje {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    height: 6em;
+}
+
+#form-button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background-color: #c50a45;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#form-button:hover {
+    background-color: #a78513;
+}
+
+.form-contacto1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contacto3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-button {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
 
 
 
@@ -565,7 +649,7 @@ span {
 
 }
 
-@media (max-width: 875px){
+@media (max-width: 875px) {
     #divtitle {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
@@ -653,7 +737,7 @@ span {
         max-height: 0;
     }
 
-    .servicioscontainer.open #submenu{
+    .servicioscontainer.open #submenu {
         max-height: fit-content;
     }
 
@@ -797,7 +881,7 @@ span {
         max-height: 0;
     }
 
-    .servicioscontainer.open #submenu{
+    .servicioscontainer.open #submenu {
         max-height: fit-content;
     }
 
@@ -815,8 +899,9 @@ span {
 
 
 
-
-
+    .slider {
+        height: 85vh;
+    }
 
     #logo {
         height: 5vh;
@@ -923,7 +1008,7 @@ span {
     .parallax3 .item {
         height: auto;
         width: 45vw;
-        padding: 0;
+        padding: 0 0 0.5em 0;
         gap: 0;
         margin: 0;
     }
@@ -946,6 +1031,12 @@ span {
 
     .parallax3 button {
         font-size: 10pt;
+        width: 12em;
+    }
+
+    .item-buttons {
+        flex-direction: column;
+        gap: 0.5em;
     }
 
     .parallax4 {
