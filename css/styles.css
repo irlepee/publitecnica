@@ -1060,19 +1060,19 @@ footer {
     }
 
     .parallax3 .item h3 {
-        font-size: 14pt;
+        font-size: 0.9em;
         margin: 0;
         padding-top: 1em;
     }
 
     .parallax3 .item p {
-        font-size: 12pt;
+        font-size: 0.8em;
         margin: 0;
-        padding: 1em 0.5em;
+        padding: 0 2em;
     }
 
     .parallax3 button {
-        font-size: 10pt;
+        font-size: 1em;
         width: 12em;
     }
 
