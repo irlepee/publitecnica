@@ -1042,13 +1042,13 @@ footer {
 
     .parallax3 {
         margin: 0;
-        padding: 1em 0;
-        gap: 1em;
+        padding: 2em 0;
+        gap: 2em;
     }
 
     .parallax3 .item {
         height: auto;
-        width: 80vw;
+        width: 75vw;
         height: auto;
         padding: 0 0 0.5em 0;
         gap: 0;
@@ -1071,20 +1071,15 @@ footer {
         padding: 0 2em;
     }
 
-    .parallax3 button {
-        font-size: 1em;
-        width: 12em;
-    }
-
     .parallax3 a {
-        font-size: 0.8em;
+        font-size: 0.75em;
         border-radius: 25px;
     }
 
     .item-buttons {
         margin: 0;
         flex-direction: row;
-        gap: 0.7em;
+        gap: 0.5em;
     }
 
     /* SECTOR 4 */
