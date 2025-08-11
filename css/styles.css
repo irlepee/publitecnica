@@ -296,9 +296,11 @@ li a {
 }
 
 #descriptionitem {
+    font-size: 23px;
     grid-column: 3/5;
     grid-row: 1/3;
     height: 100%;
+    overflow: auto;
 }
 
 #moriitem {
@@ -391,29 +393,27 @@ li a {
     text-wrap: nowrap;
 }
 
-#rotulacionp {
+.scrollpersonalizado {
     overflow-y: auto;
 }
 
 /* Para navegadores Webkit (Chrome, Edge, Safari) */
-.item p::-webkit-scrollbar {
+.scrollpersonalizado::-webkit-scrollbar {
     width: 8px;
     background: #222;
-    /* fondo oscuro */
 }
 
-.item p::-webkit-scrollbar-thumb {
+.scrollpersonalizado::-webkit-scrollbar-thumb {
     background: #c50a45;
-    /* color del "pulgar" */
     border-radius: 4px;
 }
 
-.item p::-webkit-scrollbar-thumb:hover {
+.scrollpersonalizado::-webkit-scrollbar-thumb:hover {
     background: #a78513;
 }
 
 /* Firefox */
-.item p {
+.scrollpersonalizado {
     scrollbar-width: thin;
     scrollbar-color: #a78513 #00000000;
 }
